@@ -1,0 +1,106 @@
+/* Center the entire app with a clean, modern design */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.converter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 450px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.converter-container:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.converter-inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.converter-inputs input {
+  margin: 0.75rem 0;
+  padding: 0.85rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.converter-inputs input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.converter-inputs button {
+  padding: 0.85rem;
+  font-size: 1.1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.converter-inputs button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.converter-result {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.error-message {
+  color: #ff4d4d;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+/* Responsive design: Adjust for mobile devices */
+@media (max-width: 480px) {
+  .converter-container {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .converter-inputs input,
+  .converter-inputs button {
+    font-size: 1rem;
+  }
+}
